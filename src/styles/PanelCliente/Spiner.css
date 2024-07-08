@@ -1,0 +1,35 @@
+.spinner-login {
+    width: 35px;
+    height: 35px;
+    display: grid;
+    border: 4.5px solid #ffffff00;
+    border-radius: 50%;
+    border-color: #ffffff #0000;
+    animation: spinner-e04l1k 1s infinite linear;
+  }
+  
+  .spinner-login::before,
+  .spinner-login::after {
+    content: "";
+    grid-area: 1/1;
+    margin: 2.2px;
+    border: inherit;
+    border-radius: 50%;
+  }
+  
+  .spinner-login::before {
+    border-color: #eee0d2 #0000;
+    animation: inherit;
+    animation-duration: 0.5s;
+    animation-direction: reverse;
+  }
+  
+  .spinner-login::after {
+    margin: 1px;
+  }
+  
+  @keyframes spinner-e04l1k {
+    100% {
+      transform: rotate(1turn);
+    }
+  }

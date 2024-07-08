@@ -1,0 +1,10 @@
+/* Este estilo asegurará que la tabla se desplace horizontalmente en dispositivos pequeños */
+.overflow-x-auto {
+    overflow-x: auto;
+}
+
+/* Establecer un ancho máximo en la tabla para que no se expanda más allá del contenedor */
+.table-auto {
+    width: 100%;
+    max-width: 100%;
+}
