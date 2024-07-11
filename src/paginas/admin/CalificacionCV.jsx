@@ -22,11 +22,20 @@ const CalificacionCV = () => {
         cargarModelo();
     }, []);
 
+    // Función para determinar si el CV es de un docente de primaria o secundaria
+    const esDocentePrimariaSecundaria = (cv) => {
+        const palabrasClave = ["docente", "profesor", "enseñanza", "secundaria", "primaria", "colegio"];
+        return palabrasClave.some(palabra => cv.toLowerCase().includes(palabra));
+    };
+
+    // Función de preprocesamiento del CV
     const preprocesarCV = (cv) => {
         if (cv && cv.length) {
-            // Aquí puedes implementar tu lógica de preprocesamiento específica
-            // Por ejemplo, contar palabras, analizar estructura, etc.
-            return cv.length; // Ejemplo simple: devolver la longitud del CV
+            if (esDocentePrimariaSecundaria(cv)) {
+                return cv.length; // Ejemplo simple: devolver la longitud del CV
+            } else {
+                return 0; // No es docente de primaria o secundaria, asignar calificación baja
+            }
         } else {
             return 0;
         }
@@ -39,12 +48,19 @@ const CalificacionCV = () => {
                     empleo.postulantes.forEach(async postulante => {
                         if (postulante.cv_text) {
                             const longitudCV = preprocesarCV(postulante.cv_text);
-                            const tensorCV = tf.tensor2d([[longitudCV]]);
-                            const prediccion = await modelo.predict(tensorCV).data();
-                            setResultados(prevState => ({
-                                ...prevState,
-                                [postulante._id]: prediccion[0]
-                            }));
+                            if (longitudCV > 0) {
+                                const tensorCV = tf.tensor2d([[longitudCV]]);
+                                const prediccion = await modelo.predict(tensorCV).data();
+                                setResultados(prevState => ({
+                                    ...prevState,
+                                    [postulante._id]: prediccion[0]
+                                }));
+                            } else {
+                                setResultados(prevState => ({
+                                    ...prevState,
+                                    [postulante._id]: 10 // Asignar una calificación baja
+                                }));
+                            }
                         } else {
                             setResultados(prevState => ({
                                 ...prevState,

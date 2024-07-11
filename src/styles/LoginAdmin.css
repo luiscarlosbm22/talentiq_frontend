@@ -3,7 +3,7 @@
   align-items: center;
   justify-content: center;
   height: 100vh;
-  background-image: url('https://img.freepik.com/foto-gratis/confiado-propietario-cafe-escribiendo-libro-registro_1262-4877.jpg?t=st=1695657447~exp=1695658047~hmac=d9048e9e097a100d32d423aad9b37aa8d402380b4d8c10bd32b6a7fab00f13bb'); /* Ruta de la imagen de fondo */
+  background-image: url('https://img.freepik.com/foto-gratis/paisaje-analogico-ciudad-edificios_23-2149661462.jpg?t=st=1720733507~exp=1720737107~hmac=3ee76574e50ed2fefb3aa855bedd3e446e8e52071faccf8441fa12df8cd8fe74&w=1060'); /* Ruta de la imagen de fondo */
   background-color: rgba(17, 24, 39, 0.8); /* Color de fondo con opacidad (valor alfa de 0.8) */
   background-blend-mode: overlay;
   background-size: cover;

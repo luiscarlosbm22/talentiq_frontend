@@ -1,7 +1,7 @@
 
 import "../styles/LoginAdmin.css"
 import logomeganet from "../assets/logo-meganet.webp"
-import fastfoodwhite from "../assets/FastFood-White2.png"
+import fastfoodwhite from "../assets/logo_talent_iq.png"
 import { useState } from "react"
 import { Link, useNavigate } from "react-router-dom"
 import Alerta from "../components/panel_admin/Alerta"

@@ -1,5 +1,5 @@
 
-import logofastfood from "../assets/logo-fast-food.png"
+import logofastfood from "../assets/logo_talent_iq.png"
 import { useState } from "react"
 import { Link, useNavigate } from "react-router-dom"
 import Alerta from "../components/Alerta"
