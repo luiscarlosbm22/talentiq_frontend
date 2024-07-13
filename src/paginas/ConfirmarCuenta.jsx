@@ -45,9 +45,8 @@ const ConfirmarCuenta = () => {
         <div className="flex-col flex  self-center p-10 sm:max-w-5xl xl:max-w-2xl  z-10">
           <div className="self-start hidden lg:flex flex-col  text-white">
             <img src="" className="mb-3" />
-            <h1 className="mb-3 font-bold text-5xl">¡Bienvenido! Disfruta de la experiencia sin colas. </h1>
-            <p className="pr-3">Llegar al cefetín y recibir tu comida favorita nunca había sido tan rápido, ingresa
-              y disfruta de la experiencia</p>
+            <h1 className="mb-3 font-bold text-5xl">¡Bienvenido! Gracias por Confirmar tu Cuenta. </h1>
+            <p className="pr-3">Envía tu cv ahora, y se parte de nosotros</p>
           </div>
         </div>
         <div className="flex justify-center self-center  z-10">
