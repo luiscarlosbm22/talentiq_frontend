@@ -74,8 +74,8 @@ const ConfirmarCuenta = () => {
 
             <div className="pt-5 text-center text-gray-400 text-xs">
               <span>
-                Llega y Disfruta con
-                <a href="https://codepen.io/uidesignhub" rel="" target="_blank" title="Ajimon" className="text-orange hover:text-orange-500 "> FastFood</a></span>
+                Se parte de Nostros
+                <a href="https://codepen.io/uidesignhub" rel="" target="_blank" title="Ajimon" className="text-orange hover:text-orange-500 "> TalentIQ</a></span>
             </div>
           </div>
         </div>
