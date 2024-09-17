@@ -176,7 +176,7 @@ const ListaEmpleos = () => {
               {empleosPublic.map((empleo, index) => (
                 <div key={index} className="flex flex-col items-center bg-white border border-gray-200 rounded-lg shadow md:flex-row md:max-w-3xl hover:bg-gray-100 dark:border-gray-700 dark:bg-gray-800 dark:hover:bg-gray-700">
                   <div className="flex flex-col justify-center items-center p-5">
-                    <img src="https://cdn.icon-icons.com/icons2/2942/PNG/512/work_icon_183913.png" className="w-20" alt="Icono de trabajo" />
+                    <img src="https://cdn-icons-png.flaticon.com/512/5191/5191748.png" className="w-20" alt="Icono de trabajo" />
                     
                     <h3 className="text-sm">{empleo.sede}</h3>
                   </div>

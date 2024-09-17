@@ -42,7 +42,7 @@ const PanelCliente = () => {
             </div>
           ))}
         </section>
-        <div>
+        <div className="p-10">
           <ListaEmpleos />
         </div>
         
